@@ -20,8 +20,8 @@ var indexController = {
     },
     update: function update() {
         return async function (ctx, next) {
-            var indexModel = new indexModel();
-            ctx.body = await indexModel.updateNum();
+            var indexM = new _indexModel2.default();
+            ctx.body = await indexM.updateNum();
         };
     }
 };

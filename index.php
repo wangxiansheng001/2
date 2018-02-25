@@ -75,7 +75,7 @@ while ($rows=mysql_fetch_array($result,MYSQL_ASSOC)){
 // echo "<br/>";
  
 // echo '<hr>';
-
+echo json_encode($jarr);
 // echo '编码后的json字符串：';
 return $str=json_encode($jarr);//将数组进行json编码
 // echo '<br>';

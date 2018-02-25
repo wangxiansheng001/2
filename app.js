@@ -22,4 +22,4 @@ app.use(serve(Config.get('staticDir')));
 app.listen(Config.get('port'),function(){
     console.log('koa server listening on port ' + Config.get('port'));
 });
-// export default app
+export default app

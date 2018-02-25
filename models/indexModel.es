@@ -7,7 +7,7 @@ class indexModel{
         const options={
             uri:'http://localhost/phpdemo/praise.php',
             method:'GET'
-        }
+        };
         return new Promise((resolve,reject)=>{
             rp(options).then(function(result){
                 const info = JSON.parse(result);
@@ -15,7 +15,7 @@ class indexModel{
                 if(info){
                     resolve({data:info.result});
                 }else{
-                    reject({})
+                    reject({});
                 }
             })
         })

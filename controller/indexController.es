@@ -1,4 +1,4 @@
-import indexModel from '../models/indexModel';
+import indexModels from '../models/indexModel';
 const indexController ={
     index(){
         return async(ctx,next)=>{
@@ -9,8 +9,8 @@ const indexController ={
     },
     update(){
         return async(ctx,next)=>{
-            const indexModel = new indexModel();
-            ctx.body = await indexModel.updateNum();
+            const indexM = new indexModels();
+            ctx.body = await indexM.updateNum();
         }
     }
 

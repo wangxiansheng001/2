@@ -1,5 +1,9 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _koa = require('koa');
 
 var _koa2 = _interopRequireDefault(_koa);
@@ -47,3 +51,4 @@ app.use((0, _koaStatic2.default)(_config2.default.get('staticDir')));
 app.listen(_config2.default.get('port'), function () {
   console.log('koa server listening on port ' + _config2.default.get('port'));
 });
+exports.default = app;

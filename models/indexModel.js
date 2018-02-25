@@ -25,7 +25,7 @@ var indexModel = function () {
         key: 'updateNum',
         value: function updateNum() {
             var options = {
-                url: 'http://localhost/phpdemo/praise.php',
+                uri: 'http://localhost/phpdemo/praise.php',
                 method: 'GET'
             };
             return new Promise(function (resolve, reject) {

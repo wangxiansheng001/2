@@ -11,8 +11,8 @@ describe('接口测试', function() {
       .get('index/update')
     //   .set('Accept', 'application/json')
     //   .expect('Content-Type', /json/)
-      .expect(200).end(function(){
-          if(res.data=1) return done(err);
+      .expect(200).end(function(err,res){
+          if(res.data==1) return done(err);
           done();
       });
   });

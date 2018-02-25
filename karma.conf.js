@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Sun Jan 14 2018 22:44:11 GMT+0800 (中国标准时间)
+// Generated on Tue Feb 06 2018 00:30:35 GMT+0800 (中国标准时间)
 
 module.exports = function(config) {
   config.set({
@@ -15,14 +15,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './tests/unit/**/*.spec.js',
-      './tests/unit/*.js'
+      'test/index-spec.js','public/scripts/index.js'
     ],
 
 
     // list of files / patterns to exclude
     exclude: [
-      'no'
     ],
 
 
@@ -57,12 +55,12 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: false,
 
     // Concurrency level
     // how many browser should be started simultaneous
